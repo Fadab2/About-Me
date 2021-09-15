@@ -1,0 +1,30 @@
+/** Used some styling ideas from  https://www.w3schools.com/css */
+  body {
+      background-color: antiquewhite;
+  }
+  .nav {
+      background-color: coral;
+      color: whitesmoke;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px;
+      font-size: 25px;
+    
+  }
+  
+ h1 {
+    background-color: coral;
+     text-align: center;
+     color: black;
+ }
+  .bio {
+      text-align: left;
+      border: 2px solid rgb(127, 134, 235);;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 10px;
+      font-size: 20px;
+
+  }
+
+  
