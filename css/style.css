@@ -5,7 +5,6 @@
   .nav {
       background-color: coral;
       color: whitesmoke;
-      text-decoration: none;
       text-align: center;
       padding: 10px;
       font-size: 25px;
@@ -22,7 +21,7 @@
      text-align: center;
      color: black;
  }
-  .bio {
+  .content {
       text-align: left;
       border: 2px solid rgb(127, 134, 235);;
       margin-left: 10%;
