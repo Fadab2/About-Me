@@ -1,13 +1,17 @@
 // 'use strict';
 
-function main (){
+// function main (){
 
     let correctAnswers = 0;
+    let questions = ['Please, answer by a yes or no. Do I have a B.S in IT?','Please answer by a yes or no. I interned at Yale Health?','Please, answer by a yes or no. Did I ever work at a restaurant?','Please answer by a yes or no. Am I studying to become Full-Stack Dev?','Please answer by a yes or no. Do I like Soccer?']
+    let rightAnswers = ["YES","YES","YES","YES","YES"]
+    let validResponse = ["YES","Y"]
+
 let userName = prompt('What is your name?');
 alert('Hi, ' + userName + " welcome to my About Me website!");
 
-let school = prompt('Please, answer by a yes or no. Do I have a B.S in IT?');
-if (school.toUpperCase() == 'YES' || school.toUpperCase() == 'Y') {
+let school = prompt(questions[0]);
+if (school.toUpperCase() == validResponse[0] || school.toUpperCase() == validResponse[1]) {
     alert('You got that right!');
     correctAnswers++;
     //console.log('You got that right, I have B.S in IT!');
@@ -15,8 +19,8 @@ if (school.toUpperCase() == 'YES' || school.toUpperCase() == 'Y') {
     alert('Sorry, I do have a B.S in IT');
 }
 
-let intern = prompt('Please answer by a yes or no. I interned at Yale Health?');
-if (intern.toUpperCase() == 'YES' || intern.toUpperCase() == 'Y') {
+let intern = prompt(questions[1]);
+if (intern.toUpperCase() == validResponse[0] || intern.toUpperCase() == validResponse[1]) {
     alert('You got that right!');
     correctAnswers++;
     //console.log('You got that right, I interned at Yale Health!');
@@ -24,8 +28,8 @@ if (intern.toUpperCase() == 'YES' || intern.toUpperCase() == 'Y') {
     alert('Sorry, I did intern at Yale');
 }
 
-let restaurant = prompt('Please, answer by a yes or no. Did I ever work at a restaurant?');
-if (restaurant.toUpperCase() == 'YES' || restaurant.toUpperCase() == 'Y') {
+let restaurant = prompt(questions[2]);
+if (restaurant.toUpperCase() == validResponse[0]|| restaurant.toUpperCase() == validResponse[1]) {
     alert('You got that right!');
     correctAnswers++;
     //console.log('You got that right, I worked at a restaurant!');
@@ -33,8 +37,8 @@ if (restaurant.toUpperCase() == 'YES' || restaurant.toUpperCase() == 'Y') {
     alert('Sorry, I did work at a restaurant');
 }
 
-let major = prompt('Please answer by a yes or no. Am I studying to become Full-Stack Dev?');
-if (major.toUpperCase() == 'YES' || major.toUpperCase() == 'Y') {
+let major = prompt(questions[3]);
+if (major.toUpperCase() == validResponse[0]|| major.toUpperCase() == validResponse[1]) {
     alert('You got that right!');
     correctAnswers++;
     //console.log('You got that right, I am studying to become Full-Stack!');
@@ -42,8 +46,8 @@ if (major.toUpperCase() == 'YES' || major.toUpperCase() == 'Y') {
     alert('Sorry, I am actually studying to become a Full-Stack Dev');
 }
 
-let interest = prompt('Please answer by a yes or no. Do I like Soccer?');
-if (interest.toUpperCase() == 'YES' || interest.toUpperCase() == 'Y') {
+let interest = prompt(questions[4]);
+if (interest.toUpperCase() == validResponse[0] || interest.toUpperCase() == validResponse[1]) {
     alert('You got that right!');
     correctAnswers++;
     //console.log('You got that right, I love soccer!');
@@ -56,7 +60,7 @@ let guess = prompt("Guess a number 1 to 100. You have 4 attempts to guess the nu
 let numOfGuess = 4;
 let number = Math.floor(Math.random() * 100) + 1;
 console.log(number);
-for (let attempt = 1; attempt <= numOfGuess; attempt++) {
+for (let attempt = 0; attempt < numOfGuess; attempt++) {
 
     if (guess == number) {
         alert("Good job, your guess is correct!");
@@ -65,11 +69,11 @@ for (let attempt = 1; attempt <= numOfGuess; attempt++) {
 
     } else if (guess < number) {
         alert('Your guess is too low. You have ' + (numOfGuess - attempt) + ' attempts left, guess again!');
-        guess = prompt('Guess a number 1 to 100. you have ');
+        guess = prompt('Guess a number 1 to 100. you have TEST 2');
 
     } else if (guess > number) {
         alert('Your guess is too high. You have ' + (numOfGuess - attempt) + ' attempts left, guess again!');
-        guess = prompt('Guess a number 1 to 100. you have ');
+        guess = prompt('Guess a number 1 to 100. you have TEST');
     }
 
     else {
@@ -118,6 +122,6 @@ console.log(userName + ', thank you for taking the time and asnwering the questi
 
 alert(userName + ', thank you for taking the time and asnwering the questions. You scored ' + correctAnswers + ' out of 7 questions');
 
-}
+// }
 
-main();
+// main();
