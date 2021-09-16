@@ -1,5 +1,8 @@
 // 'use strict';
-let correctAnswers = 0;
+
+function main (){
+
+    let correctAnswers = 0;
 let userName = prompt('What is your name?');
 alert('Hi, ' + userName + " welcome to my About Me website!");
 
@@ -114,3 +117,7 @@ if (guesses == 6) {
 console.log(userName + ', thank you for taking the time and asnwering the questions. You scored ' + correctAnswers + ' out of 7 questions');
 
 alert(userName + ', thank you for taking the time and asnwering the questions. You scored ' + correctAnswers + ' out of 7 questions');
+
+}
+
+main();
