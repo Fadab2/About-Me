@@ -18,3 +18,7 @@ Implented the site using HTML, basic CSS, and JS using prompt, alert and console
 
 5. Made a counter to track the user score to display the final score at the end.
 
+
+## 9/16/2021
+### Created one function
+
